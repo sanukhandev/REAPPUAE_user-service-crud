@@ -68,6 +68,12 @@ export class Users extends Entity {
   })
   tenentID: number;
 
+  @property({
+    type: 'array',
+    itemType: 'object',
+    required: false,
+  })
+  additionalInfo: {key: string,  value: string | object | never[]}[];
   constructor(data?: Partial<Users>) {
     super(data);
   }
