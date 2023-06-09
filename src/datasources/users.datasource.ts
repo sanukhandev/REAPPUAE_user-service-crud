@@ -23,6 +23,5 @@ export class UsersDataSource extends juggler.DataSource
     dsConfig: object = config,
   ) {
     super(dsConfig);
-    console.log(dsConfig);
   }
 }
